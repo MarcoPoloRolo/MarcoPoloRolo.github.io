@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advantages of Object-Oriented Programming</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="white-container">
+            <h1>Benefits of OOP</h1>
+            <div class="advantage-container" onclick="displayDetail('Code Reusability', 'Reusability is facilitated by modular design, inheritance, polymorphism, design patterns, encapsulation, and template methods. These elements break down programs into reusable components, inherit attributes and behaviors, and enable flexible, polymorphic code. Leveraging design patterns, libraries, and frameworks ensures consistency, reliability, and minimizes redundancy. Encapsulation ensures secure, self-contained components.<img src=&quot;../images/Reusability.png&quot; alt=&quot;Class Diagram&quot; style=&quot;max-width:100%;height:auto;margin-top:20px;&quot;><p>The Dog class reuses the eat() method from the animal class, through the use of inheritance.</p>')">
+                <h2 class="advantage-title">Code Reusability</h2>
+            </div>
+            <div class="advantage-container" onclick="displayDetail('Code Modularity', 'Modularity involves breaking down software into self-contained modules or classes, each encapsulating specific functionalities and data. This enhances organization, readability, and maintainability, easing debugging and testing. Modularity promotes code reuse and collaboration by providing clear interfaces and minimizing dependencies.<img src=&quot;../images/Modularity.png&quot; alt=&quot;Class Diagram&quot; style=&quot;max-width:100%;height:auto;margin-top:20px;&quot;><p>The Engine class is modular and encapsulated within the Car class, showing that the car\'s functionality is built up from separate, distinct modules.</p>')">
+                <h2 class="advantage-title">Code Modularity</h2>
+            </div>
+            <div class="advantage-container" onclick="displayDetail('Code Flexibility', 'Flexibility is achieved through inheritance, polymorphism, and encapsulation. These principles promote code reuse, dynamic behavior, and modular design, facilitating easy adaptation to changing requirements. Inheritance allows classes to inherit attributes and behaviors, polymorphism enables objects to take on multiple forms, and encapsulation hides implementation details, reducing dependencies. OOP\'s focus on these principles enables developers to build adaptable software systems.<img src=&quot;../images/Flexibility.png&quot; alt=&quot;Class Diagram&quot; style=&quot;max-width:100%;height:auto;margin-top:20px;&quot;><p>Different shapes can be drawn using the same interface, which allows the renderShape function to be flexible and handle various shape objects.</p>')">
+                <h2 class="advantage-title">Code Flexibility</h2>
+            </div>
+            <div class="advantage-container" onclick="displayDetail('Code Maintainability', 'Maintainability refers to the ease of modifying, updating, and extending software. OOP achieves this through principles like encapsulation, inheritance, and abstraction, promoting modular, organized, and understandable code. These principles enable developers to make changes without affecting other parts of the program, facilitating ongoing maintenance and evolution.<img src=&quot;../images/Maintainability.png&quot; alt=&quot;Class Diagram&quot; style=&quot;max-width:100%;height:auto;margin-top:20px;&quot;><p>The Car class overrides the startEngine() method. Changes in the Car implementation do not affect functions using Vehicle type pointers, thus improving maintainability.</p>')">
+                <h2 class="advantage-title">Code Maintainability</h2>
+            </div>
+            <div class="advantage-container" onclick="displayDetail('Data & Information Confidentiality', 'Data Confidentiality involves concealing internal details of a class or object through encapsulation. By restricting access to certain attributes or methods, typically marked as private, OOP ensures integrity, security, and maintainability by limiting direct modification and providing a clear separation of concerns.<img src=&quot;../images/Confidentiality.png&quot; alt=&quot;Class Diagram&quot; style=&quot;max-width:100%;height:auto;margin-top:20px;&quot;><p>The Account class encapsulates the balance field, preventing direct modification and ensuring data integrity and confidentiality.</p>')">
+                <h2 class="advantage-title">Data & Information Confidentiality</h2>
+            </div>
+        </div>
+        <div class="black-container" id="detailText">
+            <!-- Details will appear here when titles are clicked -->
+        </div>
+    </div>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

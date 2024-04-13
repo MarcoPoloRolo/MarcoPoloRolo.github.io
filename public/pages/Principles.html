@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principles of Object-Oriented Programming</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="white-container">
+            <h1>Object-Orientated Programming Principles</h1>
+            <div class="advantage-container" onclick="displayDetail('Encapsulation', 'Encapsulation is the process of hiding the functional elements of an object from the outside world. This involves bundling these elements in a predefined group called a class, and controlling how information can get in and out of this unit. This principle allows for a more modular approach to programming, which improves readability, maintainability, and flexibility of your code.<img src=&quot;../images/Encapsulation.png&quot; alt=&quot;Class Diagram&quot; style=&quot;max-width:100%;height:auto;margin-top:20px;&quot;><p>In this example, the balance variable and the three functions are encapsulated into the BankAccount class. In this case, BankAccount can be used as a single object to use this functionality in a cleaner way.</p>')">
+                <h2 class="advantage-title">Encapsulation</h2>
+            </div>
+            <div class="advantage-container" onclick="displayDetail('Polymorphism', 'Polymorphism is a concept that allows functions of different classes to be treated as objects of a common superclass. This is done through the process of method overloading, which involves creating multiple methods with the same name but with different input parameters. This principle promotes the re-use of existing code by allowing unique objects to implement similar functions through their common Superclass.<img src=&quot;../images/Polymorphism.png&quot; alt=&quot;Class Diagram&quot; style=&quot;max-width:100%;height:auto;margin-top:20px;&quot;><p>In this example, both Rectangle and Circle implement the Calculate area function of Shape. Each class implements the function in a similar, yet different way.</p>')">
+                <h2 class="advantage-title">Polymorphism</h2>
+            </div>
+            <div class="advantage-container" onclick="displayDetail('Inheritance', 'Inheritance is the process by which a new class is created based on an existing class. This new class (often called a child class) inherits the data and behaviour of the original class. Each child class can then be modified for its unique purpose, which allows similar classes to be created without duplicating the base code. This principle helps to organize code in a more structured way,improving readability and maintainability.<img src=&quot;../images/Inheritance.png&quot; alt=&quot;Class Diagram&quot; style=&quot;max-width:100%;height:auto;margin-top:20px;&quot;><p>In this example, the Dog class inherits the variables and functions of the Animal class, while aso adding some of its own. An object of class Dog, has a name, age, breed, along with all the functions in both classes.</p>')">
+                <h2 class="advantage-title">Inheritance</h2>
+            </div>
+            <div class="advantage-container" onclick="displayDetail('Abstraction', 'Abstraction is the process of focusing on the essential functions of an object while hiding the unnecessary details. This is usually done by hiding these details within a class. This principle allows you to create a simplified model of the functionality, without revealing the complex code underneath. This concept helps with managing code complexity, as well as reducing duplication of code.<img src=&quot;../images/Abstraction.png&quot; alt=&quot;Class Diagram&quot; style=&quot;max-width:100%;height:auto;margin-top:20px;&quot;><p>In this example, the definitions of the functions are written elsewhere in the code, hiding its complexity. This makes the class easier to understand and use throughout the code.</p>')">
+                <h2 class="advantage-title">Abstraction</h2>
+            </div>
+        </div>
+        <div class="black-container" id="detailText">
+            <!-- Details will appear here when titles are clicked -->
+        </div>
+    </div>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

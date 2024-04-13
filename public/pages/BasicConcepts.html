@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of Object-Oriented Programming</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="white-container">
+            <h1>Basics of Object-Orientated Programming</h1>
+            <div class="advantage-container" onclick="displayDetail('Classes & Objects', 'A class is a blueprint for creating objects (instances). It defines the attributes (data) and methods (functions) that the objects will have. Think of it as a template or a prototype from which objects are created. Classes encapsulate data for the objects they represent and define how those objects can interact with each other and the outside world.<img src=&quot;../images/Class.png&quot; alt=&quot;Class Diagram&quot; style=&quot;max-width:100%;height:auto;margin-top:20px;&quot;><p>Objects are instances of classes. They represent real-world entities or concepts and encapsulate both data (attributes or properties) and behaviours (methods or functions). Objects allow us to model and interact with complex systems by organizing related data and functionality into cohesive units. They facilitate code reuse, modularity, and abstraction, making it easier to manage and maintain large-scale software projects.</p>')">
+                <h2 class="advantage-title">Classes & Objects</h2>
+            </div>
+            
+            <div class="advantage-container" onclick="displayDetail('Methods & Attributes', 'Methods are functions associated with a class. They define the behaviors or actions that objects of that class can perform. Methods encapsulate the logic related to the class, enabling objects to interact with and modify their internal state or properties. They provide a way to manipulate the data stored within objects and perform operations specific to the purpose of the class.<img src=&quot;../images/MethodAttribute.png&quot; alt=&quot;Class Diagram&quot; style=&quot;max-width:100%;height:auto;margin-top:20px;&quot;><p>Attributes are piece of data that belong to a class or an object. It represents a characteristic or a property of the object. Attributes define the state of an object and can include things like variables or fields that hold values specific to each instance of the class. They describe the features or characteristics that objects of the class can have.</p>')">
+                <h2 class="advantage-title">Methods & Attributes</h2>
+            </div>
+            <div class="advantage-container" onclick="displayDetail('Private, Public, Protected', 'The keywords Private, Protected, and Public are used to control which external code has access to class members. Public members can be accessed from anywhere, both inside of outside of the class. Private members can only be accessed from the class that they are defined in. Protected members can be accessed from both the class they are defined in, as well as any derived classes (e.g. an inherited class). The purpose of these is to hide unnecessary information from external sections of code, simplifying the overall implementation. Members are made private by default and should be changed if necessary.<img src=&quot;../images/PPPTypes.png&quot; alt=&quot;Class Diagram&quot; style=&quot;max-width:100%;height:auto;margin-top:20px;&quot;><p>In this example, the make and year of the car are made private so that they cannot be accessed after the object has been created. The mileage is protected so that it cannot be accessed by external code unless it is also related to this instance of the car. Lastly, the two public members, can be accessed from anywhere in the program to create an instance of a Car or to get the Mileage of a specific car. These functions do not change the behaviour of the car and so can be made public without any downside.</p>')">
+                <h2 class="advantage-title">Private, Public, Protected</h2>
+            </div>
+        </div>
+        <div class="black-container" id="detailText">
+            <!-- Details will appear here when titles are clicked -->
+        </div>
+    </div>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
